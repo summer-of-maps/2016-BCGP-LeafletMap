@@ -24,5 +24,8 @@ another Leaflet map which uses jquery to filter data using a dropdown menu. The 
 
 In my case, I used fields related to crash year, victim type, crash severity, road conditions, and reported causes. Keep in mind this was all done using the same shapefile (crashes). 
 
+<strong>Hover Highlight</strong><br>
+A function found in the middle of main.js was written to highlight each tract visually upon mouseover. In this case, an event listener (which attaches an event handler to a specified element) was added to the tracts layer. This makes each tract transparent upon highlight. mouseout : function is used to reset this effect once a user moves the mouse away. 
+
 <strong>Hover Info</strong><br>
-A function found in the middle of main.js was written to highlight each tract visually upon mouseover. In this case, an event listener (which attaches an event handler to a specified element) was added to the tracts layer. This makes each tract transparent upon highlight. geojson.resetstyle is used to reset this effect once a user moves the mouse away. 
+info.update is a function that updates the rightside tooltip window every time the mouse hovers over a tract. This function calls on the fields found in crashes.js In your case, all you have to do is change the field name after props. if you want to specify your own data.
