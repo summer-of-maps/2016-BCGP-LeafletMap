@@ -12,9 +12,7 @@ Next what you have to do is open your geojson in notepad or Atom.io and add var 
 
 Then save the file as a JavaScript file by saving it as yourshapefile.js 
 
-Make sure that All Files is selected under 'Save as type' in the dialog box.
-
-Now you have to upload the JavaScript file to your lab 6 folder. Make sure you reference it in your html body.
+Make sure that All Files is selected under 'Save as type' in the dialog box. In your workspace folder, make sure you reference it in your html body.
 
 And that's how you get the stuff to show up on your map. From here on out, it's basically stylization with the colors, legend, etc. Note that this will be specific to your data.
 
