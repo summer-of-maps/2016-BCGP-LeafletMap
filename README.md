@@ -14,19 +14,14 @@ Then save the file as a JavaScript file by saving it as yourshapefile.js
 
 Make sure that All Files is selected under 'Save as type' in the dialog box.
 
-Now you have to upload the JavaScript file to your lab 6 folder. Make sure you reference it in your body
-by using this: 
-
-<script type="text/javascript" src="yourcounties.js"></script>
-
-Make sure it's outside of the script tag though, since it's already its own script.
+Now you have to upload the JavaScript file to your lab 6 folder. Make sure you reference it in your html body.
 
 And that's how you get the stuff to show up on your map. From here on out, it's basically stylization with the colors, legend, etc. Note that this will be specific to your data.
 
 Copy my code since that'll make it easier, but make sure to reference your JavaScript file from here on out. If you don't, the map won't know what to reference and it'll show up blank.
 
 <strong>Filtering Crashes</strong><br>
-For this map though, I wanted to have the ability to filter crashes based on certain conditions. So I took some code from
+For this map, I wanted to have the ability to filter crashes based on certain conditions. So I took some code from
 another Leaflet map which uses jquery to filter data using a dropdown menu. The code for filtering can be found in the main.js file. You need to create a function (found at the bottom of main.js) that will filter your file based on certain conditions. 
 
 In my case, I used fields related to crash year, victim type, crash severity, road conditions, and reported causes. Keep in mind this was all done using the same shapefile (crashes). You can essentially do the same with any other file you have, but you need to specify fields that are found only in your data. Otherwise the data won't show.
