@@ -6,7 +6,7 @@ of the DVRPC's Indicators of Potential Disadvantage, which lists low-income and 
 Crash and census tract data was originally in shapefile format, but it was converted into JavaScript files using QGIS.
 The QGIS plugin used to do this is called qgis2web, and it allows to the user to create Leaflet maps on the fly.
 
-Alternatively, you can go here to upload your shapefile, import it, and simplify it (check prevent shape removal and visvalingam/weighted area). I simplified it down to about 10 percent. Then finally, export it as geojson. 
+Alternatively, you can go <a href="http://www.mapshaper.org/">here</a> to upload your shapefile, import it, and simplify it (check prevent shape removal and visvalingam/weighted area). I simplified it down to about 10 percent. Then finally, export it as geojson. 
 
 Next what you have to do is open your geojson in notepad or Atom.io and add var (your variable name here) = right at the beginning of the file without the parenthesis. 
 
