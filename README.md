@@ -22,7 +22,7 @@ Copy my code since that'll make it easier, but make sure to reference your JavaS
 For this map, I wanted to have the ability to filter crashes based on certain conditions. So I took some code from
 another Leaflet map which uses jquery to filter data using a dropdown menu. The code for filtering can be found in the main.js file. You need to create a function (found at the bottom of main.js) that will filter your file based on certain conditions. 
 
-In my case, I used fields related to crash year, victim type, crash severity, road conditions, and reported causes. Keep in mind this was all done using the same shapefile (crashes). You can essentially do the same with any other file you have, but you need to specify fields that are found only in your data. Otherwise the data won't show.
+In my case, I used fields related to crash year, victim type, crash severity, road conditions, and reported causes. Keep in mind this was all done using the same shapefile (crashes). 
 
 <strong>Hover Info</strong><br>
-A function was written to highlight each tract visually upon mouseover. In this case, an event listener (which attaches an event handler to a specified element) was added to the tracts layer. This makes each tract transparent upon highlight. geojson.resetstyle is used to reset this effect once a user moves the mouse away. 
+A function found in the middle of main.js was written to highlight each tract visually upon mouseover. In this case, an event listener (which attaches an event handler to a specified element) was added to the tracts layer. This makes each tract transparent upon highlight. geojson.resetstyle is used to reset this effect once a user moves the mouse away. 
