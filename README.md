@@ -1,6 +1,6 @@
 # 2016-BCGP-LeafletMap
 All severe crashes (one or more major injury/fatality) mapped with census variables. The census variables used here were based off
-of the DVRPC's Indicators of Potential Disadvantage, which lists low-income and minority groups in the Delaware Valley.
+of the DVRPC's <a href="http://www.dvrpc.org/GetInvolved/TitleVI/">Indicators of Potential Disadvantage</a>, which lists low-income and minority groups in the Delaware Valley.
 
 <strong>The Webmap</strong><br>
 Crash and census tract data was originally in shapefile format, but it was converted into JavaScript files using QGIS.
