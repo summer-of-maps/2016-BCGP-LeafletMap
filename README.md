@@ -1,8 +1,12 @@
 # 2016-BCGP-LeafletMap
+This repo is a result of data analysis completed as part of the Summer of Maps Program. This work was completed in support of a pro bono project with the <a href="http://bicyclecoalition.org/">Bicycle Coalition of Greater Philadelphia</a>. 
+Summer of Maps is a fellowship program organized and facilitated by Azavea. Azavea is a B Corporation that specializes in civic-minded GIS software development and spatial analysis.
+Summer of Maps offers stipends to student spatial analysts to perform data analysis and visualization for non-profit organizations. Every year we match up non-profit organizations that have spatial analysis needs with talented students to implement projects over a three-month period during the summer.
+
+<strong>The Webmap</strong><br>
 All severe crashes (one or more major injury/fatality) mapped with census variables. The census variables used here were based off
 of the DVRPC's <a href="http://www.dvrpc.org/GetInvolved/TitleVI/">Indicators of Potential Disadvantage</a>, which lists low-income and minority groups in the Delaware Valley.
 
-<strong>The Webmap</strong><br>
 Crash and census tract data was originally in shapefile format, but it was converted into JavaScript files using QGIS.
 The QGIS plugin used to do this is called qgis2web, and it allows to the user to create Leaflet maps on the fly.
 
