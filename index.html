@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Severe Crashes in Philadelphia, 2010 to 2015</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!--stylesheet for Leaflet Map elements-->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/leaflet.css" />
+  <link rel="stylesheet" href="css/leaflet.draw.css" />
+  <link rel="stylesheet" href="css/leaflet.measurecontrol.css" />
+  <link rel="stylesheet" href="css/leaflet.easybutton.css" />
+  <link rel="icon" href="css/images/vz.png" type="image/png" sizes="16x16">
+  	<!--Google Font defined in the CSS style sheet-->
+  <link href='https://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:500' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  </body>
+</html>
+  <body link="white">
+  <!--sidebar content-->
+  <div class="sidebar" id="title">
+    <img id="logos" src="https://bicyclecoalition.github.io/BCGP_WEBMAP2_2016/css/images/er.PNG"/>
+    <h1><left>SEVERE CRASHES IN PHILADELPHIA</left></h1>
+  </div>
+  <div class="sidebar" id="content">
+    <p>Major injury and fatal crashes from <b>2010 to 2015</b> are shown with <a href="http://www.dvrpc.org/mapping/meta/DVRPC_EJ_IPD_2012.pdf" target="_blank">Indicators of Potential Disadvange</a> 
+    by census tract on this interactive map.<br><br><b>FILTER CRASHES BY</b></p>
+      <!--crash filter drop down menus-->
+    <div class="inputgroup">
+      <label class="label" for="year"><b>Year</b></label><br>
+      <select id="year" class="info legend" type="text">
+        <option value="All">All</option>
+        <option value="2010">2010</option>
+        <option value="2011">2011</option>
+        <option value="2012">2012</option>
+        <option value="2013">2013</option>
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+        </select>
+        <br>
+      <label class="label" for="sev"><b>Severity</b></label><br>
+      <select id="sev" class="info legend" type="text">
+        <option value="All">All</option>
+        <option value="0">Major injuries</option>
+        <option value="1">Fatal</option>
+      </select>
+        <br>
+      <label class="label" for="vic"><b>Involving</b></label><br>
+      <select id="vic" class="info legend" type="text">
+        <option value="All">All</option>
+        <option value="1">Pedestrians</option>
+        <option value="2">Cyclists</option>
+      </select>
+        <br>
+      <label class="label" for="cond"><b>Road Conditions</b></label><br>
+      <select id="cond" class="info legend" type="text">
+        <option value="All">All</option>
+        <option value="0">Dry</option>
+        <option value="1">Wet</option>
+      </select>
+        <br>
+      <label class="label" for="flag"><b>Reported Cause</b></label><br>
+      <select id="flag" class="info legend" type="text">
+        <option value="All">All</option>
+        <option value="1">Speeding</option>
+        <option value="2">Drugs and Alcohol</option>
+        <option value="3">Distracted Driving</option>
+        <option value="4">Underage Driving</option>
+      </select>
+        <br>
+    </div>
+    <p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <b>VISION ZERO</b><br><br>
+    The Bicycle Coalition of Greater Philadelphia (BCGP) has developed an action plan to eliminate
+    deaths and serious injuries on Philadelphia's roads. Reaching this goal requires a
+    strategic planning effort to build community consensus and regional political support.
+    <a href="http://bicyclecoalition.org/about-the-bicycle-coalition/our-vision/#sthash.dV2mPbjm.dpbs">Learn more</a>
+    about the BCGP's Vision Zero effort.<br><br>
+      </p>
+  </div>
+  <div id="sources">
+      <p>SOURCES: <i>Pennsylvania Department of Transportation, Delaware Valley Regional Planning Commission and Bicycle Coalition of Greater Philadelphia.</i></p>
+  </div>
+    <!--map container-->
+  <div id="map" class="map">
+
+  </div>
+  <!--different libraries-->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"   integrity="sha256-DI6NdAhhFRnO2k51mumYeDShet3I8AKCQf/tf7ARNhI="   crossorigin="anonymous"></script>
+  <script src="data/crashes.js"></script>
+  <script src="data/tracts.js"></script>
+  <script src="js/underscore.js"></script>
+  <script src="js/leaflet.js"></script>
+  <script src="js/Autolinker.min.js"></script>
+  <script src="js/leaflet.draw.js"></script>
+  <script src="js/leaflet.easybutton.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
